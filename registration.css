@@ -1,0 +1,41 @@
+body {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/995bbb91563343.5e34c32c425c7.jpg");
+}
+
+.container {
+    width: 420px;
+    background-color: rgba(24, 33, 52, 0.7);
+    margin: 100px auto 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+input {
+    width: 290px;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.polevvod input:hover {
+    box-shadow: 0 0 6px 3px rgba(19, 124, 19, 0.473);
+}
+
+.saveit {
+    width: 50%;
+    padding: 13px 30px;
+    margin: 5px 0 20px 0;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(241, 7, 77, 0.911);
+    border: none;
+    border-bottom: 4px solid #ca3737;
+}
+
+.saveit:hover {
+    transition: all 0.5s;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(250, 18, 18);
+    color: rgb(250, 18, 18);
+}

@@ -1,0 +1,31 @@
+{
+    "0001": {
+        "name": "Фото",
+        "cost": 25000,
+        "description": "Профессиональные фотографии",
+        "order": 3,
+        "img": "photo.png"
+    },
+    "0002": {
+        "name": "Видео",
+        "cost": 55000,
+        "description": "Съемка видео Full HD",
+        "order": 4,
+        "img": "video.png"
+    },
+    "0003": {
+        "name": "Клип",
+        "cost": 85000,
+        "description": "Съемка видео Full HD, HD, 4K",
+        "order": 5,
+        "img": "clip.png"
+    },
+    "0004": {
+        "name": "Шоумен",
+        "cost": 90000,
+        "description": "Профессиональные фотографии",
+        "order": 6,
+        "img": "showman.png"
+    }
+
+}

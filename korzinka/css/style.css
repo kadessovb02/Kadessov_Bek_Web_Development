@@ -1,0 +1,53 @@
+.korzinka {
+    width: 230px;
+    height: 340px;
+    border: 1px solid black;
+    margin: 30px;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+
+.korzinka .name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.korzinka .cost {
+    font-size: 1.3rem;
+    margin: 40px;
+}
+
+.korzinka .add-to-korzinka {
+    font-size: 1.1rem;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.korzinka .add-to-korzinka:hover {
+    background: #d89191;
+}
+
+.korzinka .add-to-korzinka:active {
+    background: #f54747;
+}
+
+.goods-out {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.goods-out::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.good img {
+    width: 64px;
+    height: 64px;
+}

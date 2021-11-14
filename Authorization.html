@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <meta charset="utf-8">
+    <link href="Authorization.css" rel="stylesheet">
+    <title>Регистрация</title>
+    <script>
+        function validateForm() {
+            var a = document.forms["signup"]["email"].value;
+            if (a == "") {
+                alert("Логин должен быть заполнен");
+
+            }
+            var b = document.forms["signup"]["password"].value;
+            if (b == "") {
+                alert("Пароль должен быть заполнен");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <form action="login.php" , method="POST" name="signup" onsubmit="return validateForm()">
+            <div class="login-stop">
+                <div class="login">
+                    <h3 class="login-head">Aвторизация</h3>
+                    <div class="input-data">
+                        <input type="text" name="email" id="email" placeholder="Ваш логин">
+                    </div>
+                    <div class="input-data">
+                        <input type="password" name="password" placeholder="Ваш Пароль">
+                    </div>
+                    <div class="click">
+                        <input type="submit" name="submit" value="Войти"><br/>
+                    </div>
+                    <div class="register">
+                        <a href="Registration.html">Проходить регистрацию</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </header>
+    <script src="javascript/jquery-3.5.1.min.js"></script>
+    <script src="javascript/basket.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+.login-stop {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(155, 11, 190);
+}
+
+.login {
+    background: #fff;
+    width: 380px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.login-head {
+    font-size: 40px;
+    margin: 8px 0;
+    padding: 0cm;
+    text-align: center;
+    user-select: none;
+}
+
+.input-data {
+    width: 75%;
+    margin: 20px auto;
+}
+
+.input-data input {
+    width: 95%;
+    border: 2px solid rgba(0, 0, 0, 0.39);
+    border-radius: 2px;
+    outline: none;
+    font-size: 20px;
+    transition: 0.5s;
+    height: 27px;
+}
+
+.input-data input:hover {
+    background: #fff;
+    color: rgb(161, 55, 202);
+    border-color: rgb(43, 255, 0);
+}
+
+.click {
+    text-align: center;
+}
+
+.click input {
+    width: 50%;
+    font-size: 20 px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0);
+    background-color: rgb(250, 18, 18);
+    padding: 6px 0;
+    transition: 0.5s;
+}
+
+.click input:hover {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(250, 18, 18);
+    color: rgb(250, 18, 18);
+}
+
+.register {
+    font-size: 20px;
+    margin: 30px;
+    text-align: center;
+}

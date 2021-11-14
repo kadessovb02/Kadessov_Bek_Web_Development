@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+}
+
+p {
+    color: aliceblue;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(1.jpg);
+    height: 105vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    margin-top: 25px;
+    float: right;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 4px 17px;
+    border: 3px double rgba(255, 255, 255, 0);
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: rgb(245, 219, 219);
+    color: rgb(0, 0, 0);
+}
+
+ul li.cursor a {
+    background-color: rgb(195, 32, 216);
+}
+
+.top {
+    margin: auto;
+    max-width: 1300px;
+}
+
+.agency {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.agency h3 {
+    font-family: "Georgia", Times, serif;
+    color: rgb(241, 241, 241);
+    font-size: 130px;
+}

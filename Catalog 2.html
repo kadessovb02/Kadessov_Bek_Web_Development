@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <link rel="stylesheet" href="menu.css">
+    <title>Каталог</title>
+    <style>
+        body {
+            background-image: url(catalog.jpg);
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .container {
+            position: relative;
+            text-align: left;
+            color: rgb(255, 255, 255);
+        }
+        
+        .centered {
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+        
+        img {
+            filter: grayscale(70%);
+        }
+    </style>
+
+    <body>
+
+        <h2>Каталог</h2>
+        <hr>
+
+        <center>
+            <form method="POST">
+                <h2>Поиск</h2>
+
+                <input type="text" name="search" id="object" / onchange='eventForm(this.object)'>
+                <input type="submit" name="submit" id="submit">
+            </form>
+
+            <script>
+                function eventForm(object) {
+                    object === object
+
+                    const search = (val, arr) => {
+                        for (let i = 0; i < arr.length; i++) {
+                            if (val === arr[i]) {
+                                return i
+                            }
+                        }
+                        return -1
+                    }
+                    const binary = (val, arr) => {
+                        let min = 0
+                        let max = arr.length - 1
+
+                        while (min <= max) {
+                            console.log('try')
+                            const middle = min + Math.floor((max - min) / 2)
+
+                            if (val === arr[middle]) {
+                                return middle
+                            }
+                            if (val < arr[middle]) {
+                                max = middle - 1
+                            } else {
+                                min = middle + 1
+                            }
+                        }
+
+                        return -1
+                    }
+
+
+                    const values = ['фото', 'видео', 'ведущие', 'монтаж', 'комплект']
+                        // const object = prompt('Поиск:')
+                    console.log(search(object, values))
+
+
+
+                }
+            </script>
+
+        </center>
+
+
+
+    </body>
+</head>
+
+</html>

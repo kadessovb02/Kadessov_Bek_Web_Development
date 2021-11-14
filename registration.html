@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="registration.css" rel="stylesheet">
+    <title>Registration</title>
+    <script>
+        function validateForm() {
+            var x = document.forms["signup"]["email"].value;
+            if (x == "") {
+                alert("Логин должен быть заполнен");
+
+            } // Equate the value of x to an empty value and, if so, enter a message on the screen using conditional operators
+            var y = document.forms["signup"]["password"].value;
+            var z = document.forms["signup"]["password2"].value;
+            if (y != z) {
+                alert("Повторите пароль еще раз!")
+                return false;
+
+            } // Using conditional operators to check equality of strings of two variables, if the inequality is confirmed by the mismatch message
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <img>
+        <form action="registration.php" method="post" name="signup" onsubmit="return validateForm()">
+            <!-- apply function from javascript -->
+            <div class="polevvod">
+                <input type="text" lass="form-control" name="name" placeholder="Введите ваше имя" required pattern="[А-Я][а-я]+ ">
+
+                <input type="telephone" lass="form-control" name="telephone" placeholder="Введите ваш номер" minlength="10 " maxlength="12 ">
+
+                <input type="text" class="form-control" name="email" placeholder="Введите логин">
+
+                <input type="password" lass="form-control" name="password" placeholder="Введите пароль">
+
+                <input type="password" lass="form-control" name="password2" placeholder="Введите пароль еще раз">
+            </div>
+            <input class="saveit" type="submit" name="submit" value="Зарегистрироваться"><br />
+        </form>
+    </div>
+</body>
+
+</html>
