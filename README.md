@@ -1,5 +1,5 @@
 👋 Hi, I’m Kadessov Bek (Кадесов Бек)
-✨ I have been studying bases of html, css and js since 2019
+✨ I have been studying bases of html, css, js and php since 2019
 👀 I can work on back-end and front-end of dynamic websites
 🌱 I’m currently learning Big Data Analysis in Astana IT University
 📫 How to reach me kadesov_bek02@mail.ru
